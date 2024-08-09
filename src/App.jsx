@@ -1,5 +1,5 @@
 // Import the components and other
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter,createHashRouter, RouterProvider } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import RegisterPage from "./pages/RegisterPage";
 import RootLayout from "./components/RootLayout";
@@ -29,7 +29,7 @@ import { useEffect, useState } from "react";
 import MediaPlayer from "./components/sidebar/MediaPlayer";
 
 // Defining the routes
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <RootLayout />,
