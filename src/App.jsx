@@ -29,7 +29,7 @@ import { useEffect, useState } from "react";
 import MediaPlayer from "./components/sidebar/MediaPlayer";
 
 // Defining the routes
-const router = createHashRouter([
+const router = createBrowserRouter([
   {
     path: "/",
     element: <RootLayout />,
